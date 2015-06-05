@@ -1,7 +1,7 @@
 # Crypt
 A simple GoLang package to serialize data
 
-[![Build Status](https://travis-ci.org/WastedCode/serializer.svg)](https://travis-ci.org/WastedCode/serializer)
+[![Build Status](https://travis-ci.org/WastedCode/serializer.svg)](https://travis-ci.org/WastedCode/serializer) [![GoDoc](https://godoc.org/github.com/WastedCode/serializer?status.svg)](https://godoc.org/github.com/WastedCode/serializer)
 
 ## Example Usage
 ```
