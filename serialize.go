@@ -1,4 +1,4 @@
-// Tools to serialize any kind of data using Gob + Base64
+// Package serializer provides tools to serialize any kind of data using Gob + Base64
 package serializer
 
 import (
