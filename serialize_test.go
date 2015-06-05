@@ -62,3 +62,22 @@ func TestSerializeInterfaceUsingGobAndString(t *testing.T) {
         t.Error("The deserialized values dont match the original data")
     }
 }
+
+func TestSerializeStringUsingGobAndString(t *testing.T) {
+    testStr := "abcded"
+    serialized, err := SerializeInterfaceToString(testStr)
+    if (err != nil) {
+        t.Error("Raised error while serializing interface")
+        t.Error(err)
+    }
+
+    deserialized := ""
+    err = DeserializeStringToInterface(serialized, &deserialized)
+    if (err != nil) {
+        t.Error("Unable to deserialize bytes using gob")
+    }
+
+    if (deserialized != testStr) {
+        t.Error("The deserialized string doesnt match the original string")
+    }
+}
